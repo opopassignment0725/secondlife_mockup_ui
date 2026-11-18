@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@theme {
+  --font-sans: "Inter", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --color-emerald-50: #edf8f3;
+  --color-emerald-100: #d4efe2;
+  --color-emerald-600: #13825f;
+  --color-emerald-700: #0c6c4f;
+  --color-emerald-800: #09573f;
+  --color-emerald-900: #064332;
+}
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-slate-50 font-sans text-slate-900 antialiased;
+    min-width: 320px;
+  }
+  :focus-visible {
+    outline: 2px solid #0c6c4f;
+    outline-offset: 3px;
+  }
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    touch-action: manipulation;
+  }
+  button:not(:disabled),
+  a {
+    cursor: pointer;
+  }
+}
+@layer components {
+  .sl-input {
+    @apply min-h-11 w-full rounded-lg border border-slate-300 bg-white px-3 text-sm text-slate-900;
+  }
+}
+
+:root { color-scheme: only light; }
+h1 { overflow-wrap: anywhere; }
