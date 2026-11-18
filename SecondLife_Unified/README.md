@@ -8,6 +8,8 @@
 
 ```powershell
 cd SecondLife_Unified
+npm install
+npm audit fix
 npm run dev
 ```
 
