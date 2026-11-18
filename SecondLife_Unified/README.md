@@ -1,11 +1,5 @@
 # SecondLife unified prototype
 
-第四步交付：Buyer、Seller、Admin 共用一个 React 应用、设计系统和本地数据源。原来的三个 Figma 导出目录保留，正式报告和 DBML 未因本次 UI 合并而改写。
-
-## 启动
-
-在此目录打开 PowerShell：
-
 ```powershell
 cd SecondLife_Unified
 npm install
@@ -13,11 +7,7 @@ npm audit fix
 npm run dev
 ```
 
-打开终端显示的地址，默认 http://127.0.0.1:5173/buyer/products 。当前机器已准备依赖；复制到另一台机器时先运行 `npm ci`（需网络及兼容的 Node.js；本机使用 Node 24）。不要直接双击 index.html。
-
-页面顶部 **Demo account** 可切换买家、四位卖家和管理员。角色切换会进入相应工作区；直接进入其他角色的 URL 会显示 Access denied。所有演示登录使用 `secondlife1`，注册表单中的密码不会保存；请只填写虚构资料。
-
-## 建议演示顺序
+## step
 
 1. Seller → KL Gadget Revival → Incoming offers → 接受 Samsung 报价。
 2. Buyer → Offers → 按报价加入购物车 → 勾选商品 → Checkout → Place order → 模拟付款。
