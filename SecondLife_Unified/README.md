@@ -7,7 +7,7 @@
 在此目录打开 PowerShell：
 
 ```powershell
-cd C:\Users\lcc0i\Downloads\AMCS2194_SecondLife\workplace\mockups\SecondLife_Unified
+cd SecondLife_Unified
 npm run dev
 ```
 
@@ -25,15 +25,3 @@ npm run dev
 6. Buyer 对已付款订单提出 Case；Admin → Reports & disputes 填处理说明及退款授权金额 → Resolve case；如授权退款，到 Orders & payments 单独执行模拟退款。
 
 刷新会保留演示状态。Reset demo 只重置此应用的数据。State 下拉可预览 Loading/Error 状态。
-
-## 检查
-
-```powershell
-npm run typecheck
-npm test
-npm run build
-```
-
-详情见 [INTEGRATION_GUIDE.md](INTEGRATION_GUIDE.md)，包括三端英文说明、模块映射、设计规范与实现边界。
-
-这是可操作的前端原型：付款、物流与登录均为演示。共享数据保存在同一浏览器、同一地址的 localStorage 中，不连接真实数据库、支付或快递服务。不同设备不会自动同步，也不提供服务端权限保护。
